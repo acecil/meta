@@ -9,11 +9,15 @@
 		<script src="filesystem.js"></script>
 	</head>
 	<body>
-		<input type=text id=filename />
-		<input type=text id=type />
-		<textarea id=content cols=40 rows=5></textarea>
-		<input type=button value="Save" onclick="uploadFile();" />
-		<input type=button value="Open" onclick="openFile();" />
+		<div>
+			<input type=text id=filename />
+			<input type=text id=type />
+			<input type=button value="Open" id=openBtn />
+			<input type=button value="Save" id=saveBtn />
+		</div>
+		<div>
+			<textarea id=content cols=100 rows=35></textarea>
+		</div>
 		<div id=status></div>
 	</body>
 </html>
